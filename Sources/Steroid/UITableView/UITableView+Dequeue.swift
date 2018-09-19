@@ -27,11 +27,6 @@ import UIKit
 
 public extension UITableView {
 
-    func dequeueReusableCell(withStyle style: UITableViewCell.CellStyle, for indexPath: IndexPath) -> UITableViewCell {
-        let identifier = String(style.rawValue)
-        return dequeueReusableCell(withIdentifier: identifier) ?? UITableViewCell(style: style, reuseIdentifier: identifier)
-    }
-
     func register<T: UITableViewCell>(_ classType: T.Type) {
         register(classType, forCellReuseIdentifier: String(describing: T.self))
     }
