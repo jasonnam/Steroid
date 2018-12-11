@@ -27,29 +27,29 @@ import UIKit
 
 public extension UITableView {
 
-    func register<T: UITableViewCell>(_ classType: T.Type) {
+    public func register<T: UITableViewCell>(_ classType: T.Type) {
         register(classType, forCellReuseIdentifier: String(describing: T.self))
     }
 
-    func register<T: UITableViewHeaderFooterView>(_ classType: T.Type) {
+    public func register<T: UITableViewHeaderFooterView>(_ classType: T.Type) {
         register(classType, forCellReuseIdentifier: String(describing: T.self))
     }
 
-    func registerNib<T: UITableViewCell>(_ classType: T.Type) {
+    public func registerNib<T: UITableViewCell>(_ classType: T.Type) {
         let className = String(describing: T.self)
         register(UINib(nibName: className, bundle: nil), forCellReuseIdentifier: className)
     }
 
-    func registerNib<T: UITableViewHeaderFooterView>(_ classType: T.Type) {
+    public func registerNib<T: UITableViewHeaderFooterView>(_ classType: T.Type) {
         let className = String(describing: T.self)
         register(UINib(nibName: className, bundle: nil), forHeaderFooterViewReuseIdentifier: className)
     }
 
-    func dequeue<T: UITableViewCell>(_ classType: T.Type, for indexPath: IndexPath) -> T {
+    public func dequeue<T: UITableViewCell>(_ classType: T.Type, for indexPath: IndexPath) -> T {
         return dequeueReusableCell(withIdentifier: String(describing: T.self), for: indexPath) as! T
     }
 
-    func dequeue<T: UITableViewHeaderFooterView>(_ classType: T.Type, for indexPath: IndexPath) -> T {
+    public func dequeue<T: UITableViewHeaderFooterView>(_ classType: T.Type, for indexPath: IndexPath) -> T {
         return dequeueReusableHeaderFooterView(withIdentifier: String(describing: T.self)) as! T
     }
 }
