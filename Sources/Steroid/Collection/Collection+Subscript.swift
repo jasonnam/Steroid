@@ -1,5 +1,5 @@
 //
-//  Array+Subscript.swift
+//  Collection+Subscript.swift
 //  Steroid
 //
 //  Copyright (c) 2018 Jason Nam (https://jasonnam.com)
@@ -25,13 +25,13 @@
 
 import Foundation
 
-public extension Array {
+public extension Collection {
 
     /// Get optional value at index.
     ///
     /// - Parameter index: Return value if exists at
     ///                    certain index; otherwise, nil.
-    subscript(optional index: Int) -> Element? {
+    subscript(optional index: Index) -> Element? {
         return indices.contains(index) ? self[index] : nil
     }
 }
