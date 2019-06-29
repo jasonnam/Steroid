@@ -12,6 +12,7 @@ script:
   - summon/bin tuist generate
   - xcodebuild build -workspace SteroidUIKit.xcworkspace -scheme SteroidUIKit -sdk iphonesimulator
 deploy:
+  provider: script
   script: pod trunk push
   on:
     tags: true
