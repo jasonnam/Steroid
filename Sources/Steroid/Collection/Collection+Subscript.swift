@@ -23,8 +23,6 @@
 //  THE SOFTWARE.
 //
 
-import Foundation
-
 public extension Collection {
 
     /// Get optional value at index.
