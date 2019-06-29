@@ -27,7 +27,7 @@ import UIKit
 
 public extension UIEdgeInsets {
 
-    public init(inset: CGFloat) {
+    init(inset: CGFloat) {
         self.init(top: inset, left: inset, bottom: inset, right: inset)
     }
 }

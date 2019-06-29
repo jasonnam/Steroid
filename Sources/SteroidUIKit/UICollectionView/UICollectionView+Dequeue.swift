@@ -27,16 +27,16 @@ import UIKit
 
 public extension UICollectionView {
 
-    public func register<T: UICollectionViewCell>(_ classType: T.Type) {
+    func register<T: UICollectionViewCell>(_ classType: T.Type) {
         register(classType, forCellWithReuseIdentifier: .init(describing: T.self))
     }
 
-    public func registerNib<T: UICollectionViewCell>(_ classType: T.Type) {
+    func registerNib<T: UICollectionViewCell>(_ classType: T.Type) {
         let className = String(describing: T.self)
         register(.init(nibName: className, bundle: nil), forCellWithReuseIdentifier: className)
     }
 
-    public func dequeue<T: UICollectionViewCell>(_ classType: T.Type, for indexPath: IndexPath) -> T {
+    func dequeue<T: UICollectionViewCell>(_ classType: T.Type, for indexPath: IndexPath) -> T {
         return dequeueReusableCell(withReuseIdentifier: .init(describing: T.self), for: indexPath) as! T
     }
 }

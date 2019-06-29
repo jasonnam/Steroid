@@ -30,7 +30,7 @@ public extension UITableView {
     /// Deselect selected indexPath alongside view controller transition.
     ///
     /// - Parameter transitionCoordinator: View controller transition coordinator.
-    public func deselectSelectedIndexPath(on transitionCoordinator: UIViewControllerTransitionCoordinator?) {
+    func deselectSelectedIndexPath(on transitionCoordinator: UIViewControllerTransitionCoordinator?) {
         guard let indexPathForSelectedRow = indexPathForSelectedRow else { return }
         if let transitionCoordinator = transitionCoordinator {
             transitionCoordinator.animate(alongsideTransition: { [weak self] _ in

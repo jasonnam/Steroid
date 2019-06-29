@@ -29,7 +29,7 @@ public protocol NibLoadable {}
 
 public extension NibLoadable where Self: UIViewController {
 
-    public static func loadFromNib(_ bundle: Bundle? = nil) -> Self {
+    static func loadFromNib(_ bundle: Bundle? = nil) -> Self {
         return Self(nibName: String(describing: Self.self), bundle: bundle)
     }
 }

@@ -29,12 +29,12 @@ import Foundation
 public extension Bundle {
 
     /// Info plist value for key 'CFBundleShortVersionString'
-    public var shortVersion: String? {
+    var shortVersion: String? {
         return infoDictionary?["CFBundleShortVersionString"] as? String
     }
 
     /// Info plist value for key 'CFBundleVersion'
-    public var bundleVersion: String? {
+    var bundleVersion: String? {
         return infoDictionary?["CFBundleVersion"] as? String
     }
 }
