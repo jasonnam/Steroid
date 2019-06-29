@@ -35,3 +35,7 @@ Add `Steroid/UIKit` to your `Podfile`.
 ```ruby
 pod 'Steroid/UIKit'
 ```
+
+## License
+
+Steroid is released under the MIT license. [See LICENSE](https://github.com/jasonnam/Steroid/blob/master/LICENSE) for details.
