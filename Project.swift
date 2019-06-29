@@ -1,13 +1,13 @@
 import ProjectDescription
 
 let project = Project(
-    name: "SteroidDebug",
+    name: "SteroidUIKit",
     targets: [
         .init(
-            name: "SteroidDebug",
+            name: "SteroidUIKit",
             platform: .iOS,
             product: .app,
-            bundleId: "com.steroid.debug",
+            bundleId: "com.steroid.uikit",
             infoPlist: "Debug/Info.plist",
             sources: [
                 "Debug/AppDelegate.swift",
