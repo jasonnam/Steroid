@@ -1,8 +1,8 @@
 //
-//  LinuxMain.swift
-//  SteroidTests
+//  AppDelegate.swift
+//  SteroidDebug
 //
-//  Copyright (c) 2018 Jason Nam (https://jasonnam.com)
+//  Copyright (c) 2018 - 2019 Jason Nam (https://jasonnam.com)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -23,8 +23,15 @@
 //  THE SOFTWARE.
 //
 
-import XCTest
-import SteroidTests
+import UIKit
 
-var tests = [XCTestCaseEntry]()
-XCTMain(tests)
+@UIApplicationMain
+final class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        return true
+    }
+}

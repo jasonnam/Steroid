@@ -1,8 +1,41 @@
-<div align="center"><img src="Assets/" width="" /></div>
-<h1 align="center">
-  <b>Steroid</b>
-  <br>
-  <a href="https://github.com/jasonnam/Steroid/releases"><img src="https://img.shields.io/github/release/jasonnam/Steroid.svg" alt="GitHub release" /></a>
-  <a href="https://github.com/jasonnam/Steroid/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license" /></a>
-  <a href="https://swift.org/package-manager"><img src="https://img.shields.io/badge/Swift%20PM-compatible-orange.svg" alt="Swift Package Manager" /></a>
-</h1>
+# Steroid
+
+[![GitHub release](https://img.shields.io/github/release/jasonnam/Steroid.svg)](https://github.com/jasonnam/Steroid/releases)
+[![CocoaPods](https://img.shields.io/cocoapods/v/Steroid.svg)](https://cocoapods.org/pods/Steroid)
+[![travis-ci build status](https://travis-ci.com/jasonnam/Steroid.svg?branch=master)](https://travis-ci.com/jasonnam/Steroid)
+
+Swift development on steroids.
+
+## Installation
+
+### Swift
+
+#### Swift Package Manager
+
+Add Steroid to the dependencies value of your `Package.swift`.
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/jasonnam/Steroid", from: "0.1.0")
+]
+```
+
+#### CocoaPods
+
+Add `Steroid` to your `Podfile`.
+
+```ruby
+pod 'Steroid'
+```
+
+### UIKit
+
+Add `Steroid/UIKit` to your `Podfile`.
+
+```ruby
+pod 'Steroid/UIKit'
+```
+
+## License
+
+Steroid is released under the MIT license. [See LICENSE](https://github.com/jasonnam/Steroid/blob/master/LICENSE) for details.

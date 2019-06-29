@@ -1,8 +1,8 @@
 //
-//  XCTestManifests.swift
-//  SteroidTests
+//  Bundle+Version.swift
+//  Steroid
 //
-//  Copyright (c) 2018 Jason Nam (https://jasonnam.com)
+//  Copyright (c) 2018 - 2019 Jason Nam (https://jasonnam.com)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -23,11 +23,18 @@
 //  THE SOFTWARE.
 //
 
-import XCTest
+import Foundation
 
-#if !os(macOS)
-public func allTests() -> [XCTestCaseEntry] {
-    return [
-    ]
+// MARK: - Version
+public extension Bundle {
+
+    /// Info plist value for key 'CFBundleShortVersionString'
+    var shortVersion: String? {
+        return infoDictionary?["CFBundleShortVersionString"] as? String
+    }
+
+    /// Info plist value for key 'CFBundleVersion'
+    var bundleVersion: String? {
+        return infoDictionary?["CFBundleVersion"] as? String
+    }
 }
-#endif
