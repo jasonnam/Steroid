@@ -10,7 +10,7 @@ Swift development on steroids.
 
 ### Swift
 
-- Swift Package Manager
+#### Swift Package Manager
 
 Add Steroid to the dependencies value of your `Package.swift`.
 
@@ -20,7 +20,7 @@ dependencies: [
 ]
 ```
 
-- CocoaPods
+#### CocoaPods
 
 Add `Steroid` to your `Podfile`.
 
