@@ -1,4 +1,5 @@
 // swift-tools-version:5.0
+
 import PackageDescription
 
 let package = Package(
@@ -6,9 +7,7 @@ let package = Package(
     products: [
         .library(
             name: "Steroid",
-            targets: ["Steroid"]),
-    ],
-    dependencies: [
+            targets: ["Steroid"])
     ],
     targets: [
         .target(
@@ -16,6 +15,6 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "SteroidTests",
-            dependencies: ["Steroid"]),
+            dependencies: ["Steroid"])
     ]
 )
