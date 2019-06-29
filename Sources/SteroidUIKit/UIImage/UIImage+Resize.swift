@@ -1,6 +1,6 @@
 //
 //  UIImage+Resize.swift
-//  Steroid
+//  SteroidUIKit
 //
 //  Copyright (c) 2018 - 2019 Jason Nam (https://jasonnam.com)
 //
