@@ -1,0 +1,17 @@
+cache:
+  directories:
+    - .build/checkouts
+    - .build/repositories
+    - summon
+os: osx
+language: objective-c
+osx_image: xcode10.2
+install: executable/init
+script:
+  - swift build
+  - summon/bin tuist generate
+  - xcodebuild build -workspace SteroidUIKit.xcworkspace -scheme SteroidUIKit -sdk iphonesimulator
+deploy:
+  script: pod trunk push
+  on:
+    tags: true
