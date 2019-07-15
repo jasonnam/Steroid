@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - `scrollView` property on `PDFView`.
 
+### Changed
+- Minimum deployment target for SteroidUIKit to 11.0
+
 ## [0.1.1] - 2019-06-30
 ### Added
 - Add ViewCustomizable.
