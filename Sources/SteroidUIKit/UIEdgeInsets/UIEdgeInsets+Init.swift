@@ -30,4 +30,8 @@ public extension UIEdgeInsets {
     init(inset: CGFloat) {
         self.init(top: inset, left: inset, bottom: inset, right: inset)
     }
+
+    init(x: CGFloat, y: CGFloat) {
+        self.init(top: y, left: x, bottom: y, right: x)
+    }
 }
