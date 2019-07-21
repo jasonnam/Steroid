@@ -14,14 +14,17 @@ Pod::Spec.new do |spec|
   end
   spec.subspec 'UIKit' do |spec|
     spec.ios.deployment_target = '8.0'
-    spec.source_files = 'Sources/SteroidUIKit/**/*.{swift}'
+    spec.source_files = 'Sources/SteroidUIKit/iOS8/**/*.{swift}'
   end
   spec.subspec 'UIKit11' do |spec|
     spec.ios.deployment_target = '11.0'
-    spec.source_files = 'Sources/SteroidUIKit11/**/*.{swift}'
+    spec.source_files = 'Sources/SteroidUIKit/iOS8/**/*.{swift}',
+                        'Sources/SteroidUIKit/iOS11/**/*.{swift}'
   end
   spec.subspec 'UIKit13' do |spec|
     spec.ios.deployment_target = '13.0'
-    spec.source_files = 'Sources/SteroidUIKit13/**/*.{swift}'
+    spec.source_files = 'Sources/SteroidUIKit/iOS8/**/*.{swift}',
+                        'Sources/SteroidUIKit/iOS11/**/*.{swift}',
+                        'Sources/SteroidUIKit/iOS13/**/*.{swift}'
   end
 end
