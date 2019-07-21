@@ -5,7 +5,7 @@ cache:
     - summon
 os: osx
 language: objective-c
-osx_image: xcode10.2
+osx_image: xcode11
 install: executable/init
 script:
   - swift build
