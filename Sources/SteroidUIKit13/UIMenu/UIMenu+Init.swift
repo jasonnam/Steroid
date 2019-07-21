@@ -1,5 +1,5 @@
 //
-//  UIAction+Init.swift
+//  UIMenu+Init.swift
 //  SteroidUIKit
 //
 //  Copyright (c) 2018 - 2019 Jason Nam (https://jasonnam.com)
@@ -25,11 +25,10 @@
 
 import UIKit
 
-@available(iOS 13.0, *)
-public extension UIAction {
+public extension UIMenu {
 
-    convenience init(title: String, image: UIImage? = nil,
-                     identifier: UIAction.Identifier? = nil, handler: @escaping UIActionHandler) {
-        self.init(__title: title, image: image, identifier: identifier, handler: handler)
+    convenience init(title: String = "", image: UIImage? = nil,
+                     identifier: UIMenu.Identifier? = nil, options: UIMenu.Options = [], children: [UIMenuElement]) {
+        self.init(__title: title, image: image, identifier: identifier, options: options, children: children)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  PDFView+ScrollView.swift
+//  UIAction+Init.swift
 //  SteroidUIKit
 //
 //  Copyright (c) 2018 - 2019 Jason Nam (https://jasonnam.com)
@@ -24,12 +24,11 @@
 //
 
 import UIKit
-import PDFKit
 
-@available(iOS 11.0, *)
-public extension PDFView {
+public extension UIAction {
 
-    var scrollView: UIScrollView {
-        return subviews.first { $0 is UIScrollView } as! UIScrollView
+    convenience init(title: String, image: UIImage? = nil,
+                     identifier: UIAction.Identifier? = nil, handler: @escaping UIActionHandler) {
+        self.init(__title: title, image: image, identifier: identifier, handler: handler)
     }
 }

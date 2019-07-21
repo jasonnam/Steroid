@@ -26,13 +26,13 @@
 import UIKit
 
 // MARK: - Resize
-@available(iOS 10.0, *)
 public extension UIImage {
 
     /// Resize image to fit the target size preserve image ratio.
     ///
     /// - Parameter targetSize: Target size.
     /// - Returns: Resize image.
+    @available(iOS 10.0, *)
     func resize(to targetSize: CGSize) -> UIImage {
         let widthRatio  = targetSize.width  / size.width
         let heightRatio = targetSize.height / size.height

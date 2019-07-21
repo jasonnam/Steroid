@@ -1,5 +1,5 @@
 //
-//  UIMenu+Init.swift
+//  PDFView+ScrollView.swift
 //  SteroidUIKit
 //
 //  Copyright (c) 2018 - 2019 Jason Nam (https://jasonnam.com)
@@ -24,12 +24,11 @@
 //
 
 import UIKit
+import PDFKit
 
-@available(iOS 13.0, *)
-public extension UIMenu {
+public extension PDFView {
 
-    convenience init(title: String = "", image: UIImage? = nil,
-                     identifier: UIMenu.Identifier? = nil, options: UIMenu.Options = [], children: [UIMenuElement]) {
-        self.init(__title: title, image: image, identifier: identifier, options: options, children: children)
+    var scrollView: UIScrollView {
+        return subviews.first { $0 is UIScrollView } as! UIScrollView
     }
 }
