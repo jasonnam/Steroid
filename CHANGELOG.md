@@ -8,9 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - `UIMenu` initializer with default values.
 - `UIAction` initializer with default values.
-
-### Changed
-- Minimum deployment target for SteroidUIKit to 8.0.
+- Subspecs for deployment targets.
 
 ## [0.1.3] - 2019-07-20
 ### Added
