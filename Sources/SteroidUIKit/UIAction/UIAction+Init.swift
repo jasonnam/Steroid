@@ -25,6 +25,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 public extension UIAction {
 
     convenience init(title: String, image: UIImage? = nil,

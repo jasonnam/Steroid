@@ -26,6 +26,7 @@
 import UIKit
 
 // MARK: - Resize
+@available(iOS 10.0, *)
 public extension UIImage {
 
     /// Resize image to fit the target size preserve image ratio.
