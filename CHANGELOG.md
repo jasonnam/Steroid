@@ -4,9 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.4] - 2019-07-21
+### Added
+- `UIMenu` initializer with default values.
+- `UIAction` initializer with default values.
+- Subspecs for deployment targets.
+
 ## [0.1.3] - 2019-07-20
 ### Added
-- `UIEdgeInsets` initializer with x and y values
+- `UIEdgeInsets` initializer with x and y values.
 
 ## [0.1.2] - 2019-07-15
 ### Added
@@ -23,6 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Useful Swift extensions.
 
+[0.1.4]: https://github.com/jasonnam/Steroid/compare/0.1.3...0.1.4
 [0.1.3]: https://github.com/jasonnam/Steroid/compare/0.1.2...0.1.3
 [0.1.2]: https://github.com/jasonnam/Steroid/compare/0.1.1...0.1.2
 [0.1.1]: https://github.com/jasonnam/Steroid/compare/0.1.0...0.1.1

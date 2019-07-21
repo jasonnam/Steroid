@@ -1,5 +1,5 @@
 //
-//  UIImage+Resize.swift
+//  UIMenu+Init.swift
 //  SteroidUIKit
 //
 //  Copyright (c) 2018 - 2019 Jason Nam (https://jasonnam.com)
@@ -25,26 +25,10 @@
 
 import UIKit
 
-// MARK: - Resize
-public extension UIImage {
+public extension UIMenu {
 
-    /// Resize image to fit the target size preserve image ratio.
-    ///
-    /// - Parameter targetSize: Target size.
-    /// - Returns: Resize image.
-    func resize(to targetSize: CGSize) -> UIImage {
-        let widthRatio  = targetSize.width  / size.width
-        let heightRatio = targetSize.height / size.height
-
-        let newSize: CGSize
-        if widthRatio > heightRatio {
-            newSize = CGSize(width: size.width * heightRatio, height: size.height * heightRatio)
-        } else {
-            newSize = CGSize(width: size.width * widthRatio,  height: size.height * widthRatio)
-        }
-
-        return UIGraphicsImageRenderer(size: newSize).image { [unowned self] _ in
-            self.draw(in: CGRect(origin: .zero, size: newSize))
-        }
+    convenience init(title: String = "", image: UIImage? = nil,
+                     identifier: UIMenu.Identifier? = nil, options: UIMenu.Options = [], children: [UIMenuElement]) {
+        self.init(__title: title, image: image, identifier: identifier, options: options, children: children)
     }
 }
