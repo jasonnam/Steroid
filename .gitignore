@@ -3,4 +3,5 @@
 /Packages
 /*.xcodeproj
 /*.xcworkspace
+.swiftpm
 summon
