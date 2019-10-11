@@ -7,7 +7,7 @@ language: objective-c
 osx_image: xcode11
 install: executable/init
 script:
-  - swift build --target Steroid
+  - swift build
   - summon/bin tuist generate
   - xcodebuild build -workspace SteroidUIKit.xcworkspace -scheme SteroidUIKit -sdk iphonesimulator
 deploy:
