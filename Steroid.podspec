@@ -21,10 +21,4 @@ Pod::Spec.new do |spec|
     spec.source_files = 'Sources/SteroidUIKit/iOS8/**/*.{swift}',
                         'Sources/SteroidUIKit/iOS11/**/*.{swift}'
   end
-  spec.subspec 'UIKit13' do |spec|
-    spec.ios.deployment_target = '13.0'
-    spec.source_files = 'Sources/SteroidUIKit/iOS8/**/*.{swift}',
-                        'Sources/SteroidUIKit/iOS11/**/*.{swift}',
-                        'Sources/SteroidUIKit/iOS13/**/*.{swift}'
-  end
 end
