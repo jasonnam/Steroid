@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name     = 'Steroid'
-  spec.version  = '0.1.5'
+  spec.version  = '0.1.6'
   spec.authors  = { 'Jason Nam' => 'contact@jasonnam.com' }
   spec.license  = 'MIT'
   spec.homepage = 'https://github.com/jasonnam/Steroid'
