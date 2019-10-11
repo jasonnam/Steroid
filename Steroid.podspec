@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name     = 'Steroid'
-  spec.version  = '0.1.5'
+  spec.version  = '0.1.6'
   spec.authors  = { 'Jason Nam' => 'contact@jasonnam.com' }
   spec.license  = 'MIT'
   spec.homepage = 'https://github.com/jasonnam/Steroid'
@@ -20,11 +20,5 @@ Pod::Spec.new do |spec|
     spec.ios.deployment_target = '11.0'
     spec.source_files = 'Sources/SteroidUIKit/iOS8/**/*.{swift}',
                         'Sources/SteroidUIKit/iOS11/**/*.{swift}'
-  end
-  spec.subspec 'UIKit13' do |spec|
-    spec.ios.deployment_target = '13.0'
-    spec.source_files = 'Sources/SteroidUIKit/iOS8/**/*.{swift}',
-                        'Sources/SteroidUIKit/iOS11/**/*.{swift}',
-                        'Sources/SteroidUIKit/iOS13/**/*.{swift}'
   end
 end
