@@ -7,11 +7,17 @@ let package = Package(
     products: [
         .library(
             name: "Steroid",
-            targets: ["Steroid"])
+            targets: ["Steroid"]),
+        .library(
+            name: "SteroidUIKit",
+            targets: ["SteroidUIKit"])
     ],
     targets: [
         .target(
             name: "Steroid",
+            dependencies: []),
+        .target(
+            name: "SteroidUIKit",
             dependencies: [])
     ]
 )
