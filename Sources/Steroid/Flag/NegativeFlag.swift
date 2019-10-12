@@ -25,9 +25,10 @@
 
 public struct NegativeFlag {
 
-    public private(set) var value = true
+    public private(set) var value: Bool
 
-    public init() {
+    public init(value: Bool = true) {
+        self.value = value
     }
 
     public mutating func off() {
