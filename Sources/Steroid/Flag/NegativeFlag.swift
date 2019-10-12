@@ -27,6 +27,9 @@ public struct NegativeFlag {
 
     public private(set) var value = true
 
+    public init() {
+    }
+
     public mutating func off() {
         value = false
     }
