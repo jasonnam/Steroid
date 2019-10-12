@@ -25,9 +25,10 @@
 
 public struct PositiveFlag {
 
-    public private(set) var value = false
+    public private(set) var value: Bool
 
-    public init() {
+    public init(value: Bool = false) {
+        self.value = value
     }
 
     public mutating func on() {
