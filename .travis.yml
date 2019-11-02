@@ -12,6 +12,6 @@ script:
   - xcodebuild build -workspace SteroidUIKit.xcworkspace -scheme SteroidUIKit -sdk iphonesimulator
 deploy:
   provider: script
-  script: bundle exec pod trunk push
+  script: summon/bin pod trunk push
   on:
     tags: true

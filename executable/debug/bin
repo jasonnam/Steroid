@@ -1,1 +1,2 @@
 tuist binary download https://github.com/tuist/tuist/releases/download/0.18.1/tuist.zip /
+pod ruby system
