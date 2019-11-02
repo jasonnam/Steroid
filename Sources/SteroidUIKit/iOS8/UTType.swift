@@ -23,7 +23,7 @@
 //  THE SOFTWARE.
 //
 
-import CoreServices
+import MobileCoreServices
 
 public enum UTType {
 
