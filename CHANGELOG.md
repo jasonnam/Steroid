@@ -18,15 +18,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.10] - 2019-10-19
 ### Added
-- A UIFont function returning preferred font with weight.
+- A `UIFont` function returning preferred font with weight.
 
 ## [0.1.9] - 2019-10-12
 ### Added
-- Set `PositiveFlag` and `NegativeFlag` value on initializer.
+- `PositiveFlag` and `NegativeFlag` value on initializer.
 
 ## [0.1.8] - 2019-10-12
 ### Added
-- Add public initializers to `PositiveFlag` and `NegativeFlag`.
+- Public initializers to `PositiveFlag` and `NegativeFlag`.
 
 ## [0.1.7] - 2019-10-12
 ### Added
@@ -34,7 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.6] - 2019-10-11
 ### Removed
-- `UIKit13` subspec.
+- UIKit13 subspec.
 
 ## [0.1.5] - 2019-08-04
 ### Added
@@ -59,7 +59,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.1] - 2019-06-30
 ### Added
-- Add ViewCustomizable.
+- `ViewCustomizable` protocol.
 
 ## [0.1.0] - 2019-06-29
 ### Added
