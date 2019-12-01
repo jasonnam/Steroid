@@ -29,4 +29,5 @@ public enum UTType {
 
     public static let plainText = kUTTypePlainText as String
     public static let url = kUTTypeURL as String
+    public static let pdf = kUTTypePDF as String
 }
